@@ -1,0 +1,131 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: 1fr 1fr 1fr;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-style: oblique;
+  font-size: bold;
+}
+
+
+
+#empire-logo {
+  height: 200px;
+  width: auto;
+
+  cursor: pointer;
+  border-radius: 125px;
+  transition: width .5s, height .5s, background-color .5s, transform .5s;
+}
+
+#empire-logo:hover {
+  background-color: lightgray;
+}
+
+#empire-logo:active {
+  height: 250px;
+  width: auto;
+  background-color: darkred;
+}
+
+.credit-container {
+  max-height: 800px;
+  width: 30%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 15px;
+
+  margin-top: -20px;
+
+}
+
+#currentTotal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 75px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 25px;
+
+  background-color: black;
+  color: yellow;
+
+}
+
+.purchase-container {
+
+  width: 40%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  border: 1px solid white;;
+  background-image: url('https://opengameart.org/sites/default/files/seamless%20space_0.PNG');
+  color: yellow;
+}
+.purchases {
+  border: 5px solid white;
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#stormtrooper-icon {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap:
+}
+
+.button-container {
+  max-height: 800px;
+  width: 30%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.buttons {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width:300px;
+  height:50px;
+
+  border:1px solid black;
+  color: lightgray;
+  border-radius: 25px;
+  background-color: gray;
+
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.buttons:active {
+  background-color: darkred;
+}
