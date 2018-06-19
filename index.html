@@ -1,1 +1,33 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkpoint 3</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+</head>
+<body>
+    <div class="credit-container">
+      <img src="img/galactic_credits.png">
+      <img src="img/empire_logo.png" id="empire-logo">
+      <div id="currentTotal"></div>
+    </div>
+    <div class="purchase-container">
+      <img src="img/galactic_troops.png">
+      <div class="purchases" id="stormtrooper-icon"></div>
+      <div class="purchases" id="tiefighter-icon"></div>
+      <div class="purchases" id="stardestroyer-icon"></div>
+      <div class="purchases" id="deathstar-icon"></div>
+      <div class="purchases" id="sithlord-icon"></div>
+    </div>
+    <div class="button-container">
+      <img src="img/recruit_troops.png">
+      <div class="buttons" id="stormtrooper" data-val=".1" data-cost="10">Stormtrooper <br> <span>10</span></div>
+      <div class="buttons" id="tiefighter" data-val="1" data-cost="100">TIE Fighter <br> <span>100</span></div>
+      <div class="buttons" id="stardestroyer" data-val="10" data-cost="1000">Star Destroyer <br> <span>1000</span></div>
+      <div class="buttons" id="deathstar" data-val="100" data-cost="10000">Death Star <br> <span>10000</span></div>
+      <div class="buttons" id="sithlord" data-val="1000" data-cost="100000">Sith Lord <br> <span>100000</span></div>
+    </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
