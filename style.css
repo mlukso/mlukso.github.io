@@ -11,25 +11,38 @@ body, html {
   font-size: bold;
 }
 
-
-
 #empire-logo {
   height: 200px;
   width: auto;
 
   cursor: pointer;
-  border-radius: 125px;
+  border-radius: 135px;
+  animation: pulse 2s infinite;
+
   transition: width .5s, height .5s, background-color .5s, transform .5s;
+}
+/* Found a cool way to make the logo pulse for a better CTA */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0;
+  }
+  100% {;
+      box-shadow: 0 0 0 20px White;
+  }
 }
 
 #empire-logo:hover {
   background-color: lightgray;
+  height: 225px;
+  width: auto;
+  animation-name: none;
 }
 
 #empire-logo:active {
-  height: 250px;
+  height: 275px;
   width: auto;
   background-color: darkred;
+  animation-name: none;
 }
 
 .credit-container {
@@ -123,9 +136,21 @@ body, html {
   text-align: center;
   cursor: pointer;
   font-size: 30px;
-
+  animation: click 3s infinite;
 }
 
 .buttons:active {
   background-color: darkred;
+}
+/* Adding a pulse to help with CTA */
+@keyframes click {
+  0% {
+    box-shadow: 0 0 0 0px turquoise;
+  }
+  75% {
+      box-shadow: 0 0 0 10px white;
+  }
+  100% {
+      box-shadow: 0 0 0 15px white;
+  }
 }
